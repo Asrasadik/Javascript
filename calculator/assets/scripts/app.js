@@ -3,7 +3,7 @@ let currentResult = 0;
 
 function add(){
     currentResult=currentResult+userInput.value;
-    outputResult(currentResult, calculationDes);
+    outputResult(currentResult, '');
 }
 
 addBtn.addEventListener('click',add);
