@@ -2,8 +2,9 @@ let currentResult = 0;
 
 
 function add(){
-    currentResult=currentResult+userInput.value;
-    outputResult(currentResult, '');
+    const calcDesc = `${currentResult} + ${userInput.value}`;
+    currentResult=currentResult + parseInt(userInput.value);
+    outputResult(currentResult, calcDesc);
 }
 
 addBtn.addEventListener('click',add);
@@ -23,3 +24,4 @@ let calculationDes = `(${currentResult} + 10)*3 / 2 -1`;
 is clicked it should give output but any time button can be clicked we donno when button gets clicked
 the only thing that runs after button is clicked by browser is add function so we will put this line into add function
 */
+
