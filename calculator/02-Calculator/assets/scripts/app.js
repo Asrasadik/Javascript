@@ -1,4 +1,5 @@
 let currentResult = 0;
+let logEntries=[];
 
 
 function getUserNum(){
@@ -13,8 +14,19 @@ function createAndWriteOutput(operator,resultBeforeCalc, calcNum){
 function add(){
     const enteredNum= getUserNum();
     const initialNum=currentResult;
-    currentResult=currentResult + enteredNum;
+    currentResult += enteredNum;
    createAndWriteOutput('+',initialNum,enteredNum)
+   /*const logEntry = {
+       operation: 'ADD',
+       prvResult: initialNum,
+       number: enteredNum,
+       result: currentResult
+   };
+   console.log(logEntry.operation);*/
+  // console.log(logEntry);
+
+  // logEntries.push(enteredNum);
+   //console.log(logEntries); // console.log(logEntries[0]), console.log(logEntries[1]);;
 }
 
 function sub(){
