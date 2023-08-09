@@ -162,8 +162,41 @@ function healPlayerHandler() {
 	);
 }
 
+let lastLoggedEntry;
+
 function printTheLog() {
-	console.log(battelLog);
+	let i = 0;
+
+	for (const LogEntry of battelLog) {
+		if ((!lastLoggedEntry && lastLoggedEntry !== 0) || lastLoggedEntry < i) {
+			console.log(`#${i}`);
+			for (const key in LogEntry) {
+				console.log(`${key} => ${LogEntry[key]}`);
+			}
+			lastLoggedEntry = i;
+			break;
+		}
+		i++;
+	}
+
+	/* for (const logEntry of battelLog) {
+		if ((!lastLoggedEntry && lastLoggedEntry !== 0) || lastLoggedEntry < i) {
+			console.log(`#${i}`);
+			for (const key in logEntry) {
+				console.log(`${key} => ${logEntry[key]}`);
+			}
+			lastLoggedEntry = i;
+			break;
+		}
+		i++;
+	} */
+
+	/* let j = 0;
+	do {
+		console.log(j);
+		j++;
+	} while (j < 3); */
+	//console.log(battelLog);
 }
 
 attackBtn.addEventListener('click', attackHandler);
