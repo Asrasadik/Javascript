@@ -13,6 +13,14 @@ const LOG_PLAYER_HEAL = 'PLAYER_HEAL';
 const LOG_GAME_OVER = 'GAME_OVER';
 const LOG_BONUS = 'Bonus Life';
 
+if (true) {
+	var userName = 'Max';
+}
+console.log(userName);
+
+const Infinity = 6;
+console.log(NaN);
+
 /* const enteredValue = parseInt(
 	prompt('Maximum life for you and the monster.', '100')
 );
