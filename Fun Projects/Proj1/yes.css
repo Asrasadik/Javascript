@@ -1,0 +1,21 @@
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-color: #f2dc4bff;
+}
+
+h1 {
+	font-family: 'Nunito';
+	font-size: 50px;
+	font-weight: bold;
+	color: #fb7f80;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 0px;
+}
+
+.container {
+	align-items: center;
+}
